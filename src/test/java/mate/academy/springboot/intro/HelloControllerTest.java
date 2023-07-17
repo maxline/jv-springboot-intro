@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+
+import mate.academy.springboot.intro.controller.HelloController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +25,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @SpringBootTest
 public class HelloControllerTest {
   private static final String ENDPOINT = "/hello";
-  private static final String EXPECTED_RESPONSE = "Hello, mates!";
+  private static final String EXPECTED_RESPONSE = "Hello, people!";
   private static final int EXPECTED_PORT = 8083;
   @Autowired
   private MockMvc mockMvc;
